@@ -1,0 +1,17 @@
+.wait{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid red;
+    background-color: #539b84;
+    &__point{
+        background-color: yellow;
+        width: 20px;
+        height: 20px;
+        border-radius: 25px;}
+    .dimtest{
+        height: 2em;
+    }
+}
+.dimtest{
+    width: 300px;
+}
