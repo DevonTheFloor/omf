@@ -1,3 +1,11 @@
+$menu-out: #95f6d6;
+$enchanted-color: #fbdcdb;
+$french-coloer: #fbf3fb;
+$papilla-color: #ebebeb;
+$taste-color: #fbfcfb;
+
+
+
 body{
     background-color: #F5F3DF;
 }
@@ -15,35 +23,45 @@ footer, ul{
     padding-top: 15%;
     padding-bottom: 15%;
     width: 70%;
-    height: ;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3); ;
     margin: 10%;   
 }
-.see::after {
-        content: "";
+
+
+/*--------------- clear color selected menu ------------ */
+.see {
+    background-color: $enchanted-color;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content:" ";
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: grey;
+        background-color: $enchanted-color;
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
     }
-.see{
-    opacity: 0.5;
 }
-.see:hover{
-    opacity: 1;
-}
+
 .menu--title{
     font-size: 1.8em;
+    opacity: 1;
 }
+
 .enchanted{
-    background-color: #fbdcdb;
-    color: #542c32;
-}
+    background-color: $menu-out;
+    opacity: .4;
+    color: #542c32;}
+
 .french{
     background-color: #fbf3fb;
 }
@@ -89,4 +107,4 @@ h2, h3, h4{
 
 ul{
     list-style: none;
-}
+    }
