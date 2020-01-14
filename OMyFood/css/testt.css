@@ -11,7 +11,6 @@ footer, ul {
   justify-content: space-around; }
 
 .menu {
-  border: 2px solid blue;
   padding-top: 15%;
   padding-bottom: 15%;
   width: 70%;
@@ -19,35 +18,36 @@ footer, ul {
   margin: 10%; }
 
 /*--------------- clear color selected menu ------------ */
-.see {
-  background-color: #fbdcdb;
-  position: relative;
-  z-index: 1; }
-  .see:hover::after {
-    opacity: 1; }
-  .see::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fbdcdb;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms; }
-
 .menu--title {
   font-size: 1.8em;
   opacity: 1; }
 
 .enchanted {
-  background-color: #95f6d6;
-  opacity: .4;
+  background-color: #fbdcdb;
+  border: 2px solid #ffacac;
+  /*opacity: 1;*/
   color: #542c32; }
+  .enchanted--slate {
+    background-color: #95f6d6;
+    position: relative;
+    z-index: 1; }
+    .enchanted--slate:hover::after {
+      opacity: 1; }
+    .enchanted--slate::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #95f6d6;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms; }
 
 .french {
-  background-color: #fbf3fb; }
+  background-color: #fbf3fb;
+  border: 2px solid #f0d8fb; }
 
 .appetite {
   color: #cc8437; }
@@ -59,10 +59,12 @@ footer, ul {
   color: #9b6cbb; }
 
 .papilla {
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  border: 2px solid #f4caff; }
 
 .taste {
-  background-color: #fbfcfb; }
+  background-color: #fbfcfb;
+  border: 2px solid #d0f3c6; }
 
 h1 {
   color: #e3c54f;
@@ -84,7 +86,6 @@ h2, h3, h4 {
   border-radius: 55px; }
 
 .part {
-  border: 2px solid green;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
