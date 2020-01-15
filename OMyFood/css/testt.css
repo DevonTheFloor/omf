@@ -18,6 +18,28 @@ footer, ul {
   margin: 10%; }
 
 /*--------------- clear color selected menu ------------ */
+/*.enchanted--slate {
+    background-color: $enchanted-color;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content:" ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: darken($enchanted-color, 10);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}*/
 .menu--title {
   font-size: 1.8em;
   opacity: 1; }
@@ -25,10 +47,9 @@ footer, ul {
 .enchanted {
   background-color: #fbdcdb;
   border: 2px solid #ffacac;
-  /*opacity: 1;*/
   color: #542c32; }
   .enchanted--slate {
-    background-color: #95f6d6;
+    background-color: #fbdcdb;
     position: relative;
     z-index: 1; }
     .enchanted--slate:hover::after {
@@ -40,7 +61,7 @@ footer, ul {
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: #95f6d6;
+      background-color: #f6afad;
       opacity: 0;
       z-index: -1;
       transition: opacity 250ms; }
@@ -48,6 +69,23 @@ footer, ul {
 .french {
   background-color: #fbf3fb;
   border: 2px solid #f0d8fb; }
+  .french--slate {
+    background-color: #fbf3fb;
+    position: relative;
+    z-index: 1; }
+    .french--slate:hover::after {
+      opacity: 1; }
+    .french--slate::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #eecdee;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms; }
 
 .appetite {
   color: #cc8437; }
@@ -61,10 +99,44 @@ footer, ul {
 .papilla {
   background-color: #ebebeb;
   border: 2px solid #f4caff; }
+  .papilla--slate {
+    background-color: #ebebeb;
+    position: relative;
+    z-index: 1; }
+    .papilla--slate:hover::after {
+      opacity: 1; }
+    .papilla--slate::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #d2d2d2;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms; }
 
 .taste {
   background-color: #fbfcfb;
   border: 2px solid #d0f3c6; }
+  .taste--slate {
+    background-color: #fbfcfb;
+    position: relative;
+    z-index: 1; }
+    .taste--slate:hover::after {
+      opacity: 1; }
+    .taste--slate::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #dee6de;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms; }
 
 h1 {
   color: #e3c54f;
