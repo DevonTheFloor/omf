@@ -28,6 +28,7 @@ body{
     bottom: 5px;
     z-index: 1;
     width: 100%;
+    font-size: 1.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -169,26 +170,43 @@ h2, h3, h4{
     text-align: center;
 }
 .front{
+    border: 2px solid blue;
+    display: inline-block;
     color:#e3c54f;
     text-align: center;
     font-size: 2em;
 }
 #soon{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+   // display: inline-block;
     padding-left: 3em;
     padding-right: 3em;
     border-radius: 55px;
-    margin: 15%;
+    margin-bottom: 35%;
 }
+
+.wait{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid red;
+    background-color: #539b84;
+    &__point{
+        background-color: yellow;
+        width: 8px;
+        height: 8px;
+        border-radius: 25px;}
+}
+.dimtest{
+        width: 150px;
+        height: 50%;
+    }
+
 .part{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-/*.eat{
-        display: flex;
-        flex-direction: row;
-}*/
 
 ul{
     list-style: none;
@@ -203,5 +221,8 @@ a{
     text-decoration: none;
 }
 .btn{
+    border: 2px solid red;
+}
+.linksoon{
     border: 2px solid red;
 }
