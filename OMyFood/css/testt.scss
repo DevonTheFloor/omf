@@ -1,0 +1,51 @@
+/*
+Error: Invalid CSS after "#F5F3DF": expected expression (e.g. 1px, bold), was "; }"
+        on line 8 of test.css
+
+3:   src: url("police/carring/Carrington-webfont.eot");
+4:   src: url("police/carring/Carrington-webfont.eot?#iefix") format("embedded-opentype"), url("police/carring/Carrington-webfont.woff2") format("woff2"), url("police/carring/Carrington-webfont.woff") format("woff"), url("police/carring/Carrington-webfont.ttf") format("truetype"), url("police/carring/Carrington-webfont.svg#carringtonregular") format("svg");
+5:   font-weight: normal;
+6:   font-style: normal; }*\/
+7: body {
+8:   background-color: #F5F3DF; }
+9: 
+10: .bann {
+11:   background-color: #539b84;
+12:   color: #e3c54f; }
+13: 
+
+Backtrace:
+test.css:8
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:229:in `expected!'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:744:in `assert_done'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:76:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:240:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:1151:in `parse_script'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:721:in `parse_property'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:692:in `parse_property_or_rule'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:658:in `parse_line'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:536:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:555:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:545:in `block in build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:538:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:555:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:554:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:409:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"#F5F3DF\": expected expression (e.g. 1px, bold), was \"; }\"\A         on line 8 of test.css\A \A 3:   src: url(\"police/carring/Carrington-webfont.eot\");\A 4:   src: url(\"police/carring/Carrington-webfont.eot?#iefix\") format(\"embedded-opentype\"), url(\"police/carring/Carrington-webfont.woff2\") format(\"woff2\"), url(\"police/carring/Carrington-webfont.woff\") format(\"woff\"), url(\"police/carring/Carrington-webfont.ttf\") format(\"truetype\"), url(\"police/carring/Carrington-webfont.svg#carringtonregular\") format(\"svg\");\A 5:   font-weight: normal;\A 6:   font-style: normal; }*/\A 7: body {\A 8:   background-color: #F5F3DF; }\A 9: \A 10: .bann {\A 11:   background-color: #539b84;\A 12:   color: #e3c54f; }\A 13: "; }

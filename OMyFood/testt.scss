@@ -1,9 +1,63 @@
-@font-face {
-  font-family: "carringtonregular";
+/*@font-face {
+  font-family: "carringtonregular", "normal";
   src: url("police/carring/Carrington-webfont.eot");
   src: url("police/carring/Carrington-webfont.eot?#iefix") format("embedded-opentype"), url("police/carring/Carrington-webfont.woff2") format("woff2"), url("police/carring/Carrington-webfont.woff") format("woff"), url("police/carring/Carrington-webfont.ttf") format("truetype"), url("police/carring/Carrington-webfont.svg#carringtonregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal; }*/
+
+@keyframes waiting {
+  0% {
+    transform: translateY(0); }
+  8% {
+    transform: translate(-50%); }
+  16% {
+    transform: translateY(-100%); }
+  24% {
+    transform: translateY(-200%); }
+  32% {
+    transform: translateY(-100%); }
+  40% {
+    transform: translateY(-50%); }
+  48% {
+    transform: translateY(0); }
+  56% {
+    transform: translateY(50%); }
+  64% {
+    transform: translateY(100%); }
+  72% {
+    transform: translateY(200%); }
+  80% {
+    transform: translateY(100%); }
+  90% {
+    transform: translateY(50%); }
+  100% {
+    transform: translateY(5%); } }
+.wait {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid red;
+  background-color: #539b84; }
+  .wait__point {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 45%;
+    margin-left: 15%;
+    transform: translateY(0);
+    animation-name: waiting;
+    animation-duration: 1500ms; }
+
+.two {
+  animation-delay: 200ms; }
+
+.three {
+  animation-delay: 400ms; }
+
+.dimtest {
+  margin: 25%;
+  width: 500px;
+  height: 100%; }
+
 body {
   background-color: #F5F3DF; }
 
@@ -126,7 +180,7 @@ body {
       transition: opacity 250ms; }
 
 h1 {
-  font-family: "carringtonregular";
+  font-family: 'carringtonregular';
   color: #e3c54f;
   text-align: center;
   font-size: 6em; }
@@ -142,17 +196,12 @@ h2, h3, h4 {
   font-size: 2em; }
 
 #soon {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  vertical-align: bottom;
   padding-left: 3em;
   padding-right: 3em;
   border-radius: 55px;
-  margin-bottom: 35%;
-  /*&:hover + .dimtest{
-          transform: translateY(-400%);
-      }*/ }
-  #soon:hover > .dimtest {
-    animation: waiting 1000ms; }
+  margin-bottom: 35%; }
 
 .wait {
   display: flex;
@@ -160,21 +209,15 @@ h2, h3, h4 {
   border: 3px solid red;
   background-color: #539b84; }
   .wait__point {
-    background-color: yellow;
+    background-color: pink;
     width: 8px;
     height: 8px;
-    border-radius: 45%;
-    margin-left: 15%; }
+    border-radius: 25px; }
 
-@keyframes waiting {
-  down {
-    transform: translateY(0); }
-  up {
-    transform: translateY(400%); } }
 .dimtest {
-  margin-top: 21%;
-  width: 80px;
-  height: 80%; }
+  margin: 25%;
+  width: 150px;
+  height: 50%; }
 
 .part {
   display: flex;
@@ -198,4 +241,4 @@ a {
 .linksoon {
   border: 2px solid red; }
 
-/*# sourceMappingURL=testt.css.map */
+/*# sourceMappingURL=test.css.map */
