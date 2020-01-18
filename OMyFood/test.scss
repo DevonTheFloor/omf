@@ -1,0 +1,278 @@
+$menu-out: #95f6d6;
+$enchanted-color: #fbdcdb;
+$french-color: #fbf3fb;
+$papilla-color: #ebebeb;
+$taste-color: #fbfcfb;
+
+@font-face {
+    font-family: 'carringtonregular';
+    src: url("police/carring/Carrington-webfont.eot");
+    src: url("police/carring/Carrington-webfont.eot?#iefix") format("embedded-opentype"),
+         url("police/carring/Carrington-webfont.woff2") format("woff2"),
+         url("police/carring/Carrington-webfont.woff") format("woff"),
+         url("police/carring/Carrington-webfont.ttf") format("truetype"),
+         url("police/carring/Carrington-webfont.svg#carringtonregular") format("svg");
+    font-weight: normal;
+    font-style: normal;}
+
+@keyframes waiting{
+    0% {
+        transform: translateY(0);
+    }
+    8%{
+        transform: translate(-50%);
+    }
+    16% {
+        transform: translateY(-100%);
+    }
+    24%{
+        transform: translateY(-200%);
+    }
+    32%{
+        transform: translateY(-100%);
+    }
+    40%{
+        transform: translateY(-50%);
+    }
+    48%{
+        transform: translateY(0);
+    }
+    56%{
+        transform: translateY(50%);
+    }
+    64%{
+        transform: translateY(100%);
+    }
+    72%{
+        transform: translateY(200%);
+    }
+    80%{
+        transform: translateY(100%);
+    }
+    90%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(5%);
+    }
+}
+
+body{
+    background-color: #F5F3DF;
+}
+
+.bann{
+    background-color: #539b84;
+    color:#e3c54f;
+}
+#footer{
+    position: fixed;
+    bottom: 5px;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 70%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3); ;
+    margin: 10%;
+    &--title{
+        font-size: 1.5em;
+        }
+}
+
+.enchanted{
+    background-color: $enchanted-color;
+    border: 2px solid #ffacac;
+    color: #542c32;
+    &--slate{
+    background-color: $enchanted-color;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content:" ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: darken($enchanted-color, 10);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+  }
+}
+
+.french{
+    background-color: #fbf3fb;
+    border: 2px solid #f0d8fb;
+    &--slate {
+    background-color: $french-color;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content:" ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: darken($french-color, 10);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}
+}
+.appetite{
+    font-family: 'comic sans ms';
+    color: #cc8437;
+}
+.joy{
+    color: #ad74a3;
+}
+.sweetened{
+    color: #9b6cbb;
+}
+.papilla{
+    background-color: #ebebeb;
+    border: 2px solid #f4caff;
+     &--slate {
+    background-color: $papilla-color;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content:" ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: darken($papilla-color, 10);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}
+}
+.taste{
+    background-color: #fbfcfb;
+    border: 2px solid #d0f3c6;
+     &--slate {
+    background-color: $taste-color;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content:" ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: darken($taste-color, 10);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+  }
+}
+h1{
+    font-family: 'carringtonregular';
+    color:#e3c54f;
+    text-align: center;
+    font-size: 6em;
+}
+h2, h3, h4{
+    text-align: center;
+}
+.front{
+    display: inline-block;
+    color:#e3c54f;
+    text-align: center;
+    font-size: 2em;
+}
+#soon{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 55px;
+    margin-bottom: 35%;
+}
+
+.wait{
+    display: flex;
+    flex-direction: row;
+    background-color: #539b84;
+    &__point{
+        background-color: yellow;
+        width: 8px;
+        height: 8px;
+        border-radius: 25px;
+         margin-left: 15%;
+           transform: translateY(0);
+            animation-name: waiting;
+         animation-duration: 1500ms;}
+}
+.two{
+    animation-delay: 200ms;
+}
+.three{
+    animation-delay: 400ms;
+}
+.dimtest{
+        margin-top: 17%;
+        width: 150px;
+        height: 50%;
+    }
+
+.part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+    }
+p{
+    text-align: justify;
+    margin: 5%;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.btn{
+   
+}
+.linksoon{
+   
+}
