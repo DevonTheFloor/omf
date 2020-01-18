@@ -15,6 +15,48 @@ $taste-color: #fbfcfb;
     font-weight: normal;
     font-style: normal;}
 
+@keyframes waiting{
+    0% {
+        transform: translateY(0);
+    }
+    8%{
+        transform: translate(-50%);
+    }
+    16% {
+        transform: translateY(-100%);
+    }
+    24%{
+        transform: translateY(-200%);
+    }
+    32%{
+        transform: translateY(-100%);
+    }
+    40%{
+        transform: translateY(-50%);
+    }
+    48%{
+        transform: translateY(0);
+    }
+    56%{
+        transform: translateY(50%);
+    }
+    64%{
+        transform: translateY(100%);
+    }
+    72%{
+        transform: translateY(200%);
+    }
+    80%{
+        transform: translateY(100%);
+    }
+    90%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(5%);
+    }
+}
+
 body{
     background-color: #F5F3DF;
 }
@@ -170,7 +212,6 @@ h2, h3, h4{
     text-align: center;
 }
 .front{
-    border: 2px solid blue;
     display: inline-block;
     color:#e3c54f;
     text-align: center;
@@ -179,7 +220,6 @@ h2, h3, h4{
 #soon{
     display: flex;
     flex-direction: row;
-   // display: inline-block;
     padding-left: 3em;
     padding-right: 3em;
     border-radius: 55px;
@@ -189,15 +229,25 @@ h2, h3, h4{
 .wait{
     display: flex;
     flex-direction: row;
-    border: 3px solid red;
     background-color: #539b84;
     &__point{
         background-color: yellow;
         width: 8px;
         height: 8px;
-        border-radius: 25px;}
+        border-radius: 25px;
+         margin-left: 15%;
+           transform: translateY(0);
+            animation-name: waiting;
+         animation-duration: 1500ms;}
+}
+.two{
+    animation-delay: 200ms;
+}
+.three{
+    animation-delay: 400ms;
 }
 .dimtest{
+        margin-top: 17%;
         width: 150px;
         height: 50%;
     }
@@ -221,8 +271,8 @@ a{
     text-decoration: none;
 }
 .btn{
-    border: 2px solid red;
+   
 }
 .linksoon{
-    border: 2px solid red;
+   
 }
