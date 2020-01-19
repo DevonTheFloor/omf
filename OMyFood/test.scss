@@ -3,18 +3,37 @@ $enchanted-color: #fbdcdb;
 $french-color: #fbf3fb;
 $papilla-color: #ebebeb;
 $taste-color: #fbfcfb;
+$bann-color: #539b84;
+$bgcolor: #F5F3DF;
 
 @font-face {
-    font-family: 'carringtonregular';
-    src: url("police/carring/Carrington-webfont.eot");
-    src: url("police/carring/Carrington-webfont.eot?#iefix") format("embedded-opentype"),
-         url("police/carring/Carrington-webfont.woff2") format("woff2"),
-         url("police/carring/Carrington-webfont.woff") format("woff"),
-         url("police/carring/Carrington-webfont.ttf") format("truetype"),
-         url("police/carring/Carrington-webfont.svg#carringtonregular") format("svg");
+ font-family: 'freebooter_scriptregular';
+    src: url('freebooterscript-webfont.eot');
+    src: url('../police/freeb/freebooterscript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../police/freeb/freebooterscript-webfont.woff2') format('woff2'),
+         url('../police/freeb/freebooterscript-webfont.woff') format('woff'),
+         url('../police/freeb/freebooterscript-webfont.ttf') format('truetype'),
+         url('../police/freeb/freebooterscript-webfont.svg#freebooter_scriptregular') format('svg');
     font-weight: normal;
-    font-style: normal;}
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'kalam';
+    src: url('../police/kalam/Kalam-Light.ttf');
+    font-style: normal;
+     font-weight: normal;
+}
+
+
+
+
+body{
+    background-image: url("../image/marbre.jpg");
+    background-attachment: fixed;
+}
+    
 @keyframes waiting{
     0% {
         transform: translateY(0);
@@ -57,22 +76,44 @@ $taste-color: #fbfcfb;
     }
 }
 
-body{
-    background-color: #F5F3DF;
+#header{
+    width: 100%;
+    height: 50%;
+    background-image: url("../image/decoo.png");
+   // background-repeat: ;
+    background-size: contain;
 }
 
 .bann{
-    background-color: #539b84;
-    color:#e3c54f;
+    //width: 100%;
+    background-color: $bann-color;
+    //color:#e3c54f;
+    box-shadow: 12px 12px 2px darken($bann-color,10) ;
 }
+h1{
+    padding: 1%;
+    font-family:'freebooter_scriptregular';
+    text-shadow: 4px 6px 4px darken(yellow,15);
+    text-align: center;
+    font-size: 7em;
+    color: yellow;
+}
+
+h2, h3, h4{
+    text-align: center;
+}
+
 #footer{
-    padding-top: 5%;
+      background-image: url("../image/decob.png");
+   // background-repeat: ;
+    background-size: contain;
+    padding-top: 1%;
     position: fixed;
-    bottom: 5px;
+    bottom: 2px;
     z-index: 1;
     width: 100%;
     height: auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -81,10 +122,12 @@ body{
     padding-top: 15%;
     padding-bottom: 15%;
     width: 70%;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3); ;
+    box-shadow: 12px 12px 2px 1px silver; 
     margin: 10%;
     &--title{
         font-size: 1.5em;
+        color: darken(yellow,20);
+        text-shadow: 4px 6px 4px darken(yellow,15);
         }
 }
 
@@ -214,22 +257,24 @@ body{
     }
   }
 }
-h1{
-    font-family: 'carringtonregular';
-    color:#e3c54f;
-    text-align: center;
-    font-size: 6em;
+
+.eat{
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-h2, h3, h4{
-    text-align: center;
-}
+
+
 .front{
     display: inline-block;
-    color:#e3c54f;
+    color: yellow;
+    text-shadow: 4px 6px 4px darken(yellow,15);
     text-align: center;
     font-size: 2em;
 }
 #soon{
+    color: yellow;
     display: flex;
     flex-direction: row;
     padding-left: 3em;
@@ -273,6 +318,7 @@ h2, h3, h4{
 
 ul{
     list-style: none;
+    font-family: 'kalam';
     }
 p{
     text-align: justify;
@@ -280,9 +326,13 @@ p{
 }
 
 a{
-    display: inline-block;
+    //display: inline-block;
     text-decoration: none;
-}
+    &:visited{
+        color: darken(yellow,20);
+    }
+    }
+
 
 @keyframes wizzle {
   2% {
@@ -311,10 +361,9 @@ a{
     transform: translate(-8px, -7px) rotate(-2.5deg); }
 }
 .btn{
-    text-justify: center;
+    margin-bottom: 15%;
+    color: yellow;
     text-shadow: 4px 6px 4px darken(yellow,15);
-    margin: 1%;
-    padding: 2%;
    border: 2px solid yellow;
     border-radius: 20%;
     box-shadow: 4px 6px 4px darken(yellow,15);
@@ -323,14 +372,5 @@ a{
         animation-timing-function: ease-in-out;
         animation-duration: 1500ms;
     }
-}
-.eat{
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.testeat{
-    display: inline;
 }
 
