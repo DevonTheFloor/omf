@@ -90,7 +90,7 @@ body{
     }
 }
 
-#header{
+header{
     width: 100%;
     height: 50%;
     background-image: url("../image/decoo.png");
@@ -99,7 +99,7 @@ body{
 }
 
 .bann{
-    //width: 100%;
+    //w  </a>idth: 100%;
     background-color: $bann-color;
     //color:#e3c54f;
     box-shadow: 12px 12px 2px darken($bann-color,10) ;
@@ -440,8 +440,7 @@ h4{
         height: 50%;
     }
 
-
-#footer{
+footer{
       background-image: url("../image/decob.png");
    // background-repeat: ;
     padding-top: 1%;
