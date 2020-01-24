@@ -113,7 +113,13 @@ h1{
     color: yellow;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h2, h3, h4{
+    padding: 3%;
     text-align: center;
 }
 h4{
@@ -121,29 +127,15 @@ h4{
     font-size: 1.3em;
 }
 
-#footer{
-      background-image: url("../image/decob.png");
-   // background-repeat: ;
-    background-size: contain;
-    padding-top: 1%;
-    position: fixed;
-    bottom: 2px;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    font-size: 1.2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 15%;
     padding-bottom: 15%;
-    width: 70%;
-    box-shadow: 12px 12px 2px 1px silver; 
+    width: 80%;
+    box-shadow: 18px 18px 20px 12px silver,3px 3px grey; 
     margin: 10%;
     border: 2px darken(yellow,20);
     &--title{
@@ -152,6 +144,81 @@ h4{
         text-shadow: 4px 6px 4px darken(yellow,15);
         }
 }
+
+
+.chapt{
+   border: 2px solid red;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    
+    &__line{
+        border: 2px solid green;
+        width: 30%;
+        height: 30px;
+        margin: 2%;
+        &--ench{border: 2px solid yellow;
+            margin: 1px;
+           //background-color: $ench_font-color; 
+             background-image: url('../image/li-ench.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            &-R{
+                 transform: rotate(180deg);
+            }
+           
+        }
+        &--papil{
+             background-image: url('../image/li-papilla.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            &-R{
+               transform: rotate(180deg); 
+            }
+        }
+        &--appetite{
+            background-image: url('../image/li-appetite.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            &-R{
+               transform: rotate(180deg); 
+                }
+        }
+        &--joy{
+            background-image: url('../image/li-joy.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+                &-R{
+                    transform: rotate(180deg); 
+                }
+        
+        }
+        &--sweet{background-image: url('../image/li-sweet.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            &-R{
+                transform: rotate(180deg); 
+            }
+        }
+        &--papil{background-image: url('../image/li-papil.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            &-R{
+                transform: rotate(180deg); 
+            }
+        }
+        &--taste{background-image: url('../image/li-taste.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            &-R{
+                transform: rotate(180deg); 
+            }
+        }
+    }
+}
+
 
 %card{
     margin-top: 15%;
@@ -164,7 +231,7 @@ h4{
     
     @extend %card;
     background-color: $enchanted-color;
-    border: 2px solid $ench_font-color;
+    border: 2px solid darken($enchanted-color,10);
     &--slate{
     background-color: $enchanted-color;
     position: relative;
@@ -187,6 +254,25 @@ h4{
         transition: opacity 250ms;
     }
   }
+    &__subtitle{
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+    &__img{
+        border: 2px solid green;
+        background-image: url('../image/note.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &--top{
+            width: 120px;
+            height: 120px;
+        }
+        &--down{
+            margin-top:13%;
+            width: 90px;
+            height: 90px;
+        }
+    }
 }
 
 .french{
@@ -226,6 +312,7 @@ h4{
 .sweetened{
     color: #9b6cbb;
 }
+
 .papilla{
       @extend %card;
     background-color: #ebebeb;
@@ -250,9 +337,16 @@ h4{
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
+        }
+    }
+    &__subtitle{
+        font-weight: bolder;
+        font-size: 5em;
+        color: blue;
+
     }
 }
-}
+
 .taste{
       @extend %card;
     background-color: #fbfcfb;
@@ -281,27 +375,6 @@ h4{
   }
 }
 
-.chapt{
-    
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-    &__line{
-          
-        width: 25%;
-        height: 4px;
-        margin: 5%;
-        &--ench{
-           background-color: $ench_font-color; 
-        }
-        
-    }
-
-}
-
-
 .eat{
     width: 80%;
     display: flex;
@@ -323,6 +396,13 @@ h4{
     text-align: center;
     font-size: 2em;
 }
+
+.part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #soon{
     color: yellow;
     display: flex;
@@ -360,7 +440,17 @@ h4{
         height: 50%;
     }
 
-.part{
+
+#footer{
+      background-image: url("../image/decob.png");
+   // background-repeat: ;
+    padding-top: 1%;
+    position: fixed;
+    bottom: 2px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    font-size: 1.2em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -415,3 +505,97 @@ a{
     }
 }
 
+
+//==================== MEDIA =====================
+
+@media screen and (max-width:1000px){
+    h1{
+         font-size: 5em;
+
+    }
+    h2{
+        display: none;
+    }
+    %card{
+    margin-top: 15%;
+    margin-bottom: 30%;
+    font-size: 0.95em;
+    font-family: 'kalam';
+}
+    .menu{
+        margin: 10%;
+        &--title{
+        font-size: 1.3em;}
+    }
+    #soon{
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+     #footer{
+        font-size: 1em;}
+}
+//==================== 700px=======================
+@media screen and (max-width:700px){
+    h1{
+        font-size: 3em;
+    }
+    #header{
+         width: 100%;
+        height: auto;
+         background-image: url('');
+    }
+    %card{
+    margin-top: 15%;
+    margin-bottom: 30%;
+    font-size: 0.7em;
+    font-family: 'kalam';
+}
+     .menu{
+         
+         margin: 10%;
+        width: 90%;
+         &__slate{
+             margin: 1%;
+            background-image: url('../image/lit-menu.png'); 
+             background-repeat: no-repeat;
+             background-size: cover;
+             display: block;
+         }
+         &__title{
+             font-size: 1.9em;
+         }
+    }
+    
+    #footer{
+        font-size: 0.82em;}
+    
+    #top, #down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .btn:active{
+        animation-name: wizzle;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1500ms;}
+   
+    .enchanted{
+ 
+    &__img{
+        &--top{
+            width: 35px;
+            height: 35px;
+        }
+        &--down{
+           display: none;
+        }
+    }
+}
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    
+}

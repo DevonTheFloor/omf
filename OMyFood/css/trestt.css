@@ -64,17 +64,26 @@ h1 {
   font-size: 7em;
   color: yellow; }
 
-img {
-  max-width: 100%;
-  height: auto; }
-
 h2, h3, h4 {
-  padding: 3%;
   text-align: center; }
 
 h4 {
   font-family: 'england_hand';
   font-size: 1.3em; }
+
+#footer {
+  background-image: url("../image/decob.png");
+  background-size: contain;
+  padding-top: 1%;
+  position: fixed;
+  bottom: 2px;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
 .menu {
   display: flex;
@@ -82,71 +91,14 @@ h4 {
   align-items: center;
   padding-top: 15%;
   padding-bottom: 15%;
-  width: 80%;
-  box-shadow: 18px 18px 20px 12px silver,3px 3px grey;
+  width: 70%;
+  box-shadow: 12px 12px 2px 1px silver;
   margin: 10%;
   border: 2px #999900; }
   .menu--title {
     font-size: 1.5em;
     color: #999900;
     text-shadow: 4px 6px 4px #b3b300; }
-
-.chapt {
-  border: 2px solid red;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: center; }
-  .chapt__line {
-    border: 2px solid green;
-    width: 30%;
-    height: 30px;
-    margin: 2%; }
-    .chapt__line--ench {
-      border: 2px solid yellow;
-      margin: 1px;
-      background-image: url("../image/li-ench.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .chapt__line--ench-R {
-        transform: rotate(180deg); }
-    .chapt__line--papil {
-      background-image: url("../image/li-papilla.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .chapt__line--papil-R {
-        transform: rotate(180deg); }
-    .chapt__line--appetite {
-      background-image: url("../image/li-appetite.png");
-      background-repeat: no-repeat;
-      background-size: auto; }
-      .chapt__line--appetite-R {
-        transform: rotate(180deg); }
-    .chapt__line--joy {
-      background-image: url("../image/li-joy.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .chapt__line--joy-R {
-        transform: rotate(180deg); }
-    .chapt__line--sweet {
-      background-image: url("../image/li-sweet.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .chapt__line--sweet-R {
-        transform: rotate(180deg); }
-    .chapt__line--papil {
-      background-image: url("../image/li-papil.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .chapt__line--papil-R {
-        transform: rotate(180deg); }
-    .chapt__line--taste {
-      background-image: url("../image/li-taste.png");
-      background-repeat: no-repeat;
-      background-size: contain; }
-      .chapt__line--taste-R {
-        transform: rotate(180deg); }
 
 .enchanted, .french, .papilla, .taste {
   margin-top: 15%;
@@ -156,7 +108,7 @@ h4 {
 
 .enchanted {
   background-color: #fbdcdb;
-  border: 2px solid #f6afad; }
+  border: 2px solid #542c32; }
   .enchanted--slate {
     background-color: #fbdcdb;
     position: relative;
@@ -174,21 +126,6 @@ h4 {
       opacity: 0;
       z-index: -1;
       transition: opacity 250ms; }
-  .enchanted__subtitle {
-    font-weight: bolder;
-    font-size: 1.5em; }
-  .enchanted__img {
-    border: 2px solid green;
-    background-image: url("../image/note.png");
-    background-size: contain;
-    background-repeat: no-repeat; }
-    .enchanted__img--top {
-      width: 120px;
-      height: 120px; }
-    .enchanted__img--down {
-      margin-top: 13%;
-      width: 90px;
-      height: 90px; }
 
 .french {
   background-color: #fbf3fb;
@@ -241,10 +178,6 @@ h4 {
       opacity: 0;
       z-index: -1;
       transition: opacity 250ms; }
-  .papilla__subtitle {
-    font-weight: bolder;
-    font-size: 5em;
-    color: blue; }
 
 .taste {
   background-color: #fbfcfb;
@@ -267,6 +200,20 @@ h4 {
       z-index: -1;
       transition: opacity 250ms; }
 
+.chapt {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center; }
+  .chapt__line {
+    /*width: 25%;
+    height: 4px;
+    margin: 5%;*/ }
+    .chapt__line--ench {
+      border: 2px solid orange;
+      background-image: url("../image/trench.png"); }
+
 .eat {
   width: 80%;
   display: flex;
@@ -284,11 +231,6 @@ h4 {
   text-shadow: 4px 6px 4px #b3b300;
   text-align: center;
   font-size: 2em; }
-
-.part {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
 
 #soon {
   color: yellow;
@@ -325,15 +267,7 @@ h4 {
   width: 150px;
   height: 50%; }
 
-#footer {
-  background-image: url("../image/decob.png");
-  padding-top: 1%;
-  position: fixed;
-  bottom: 2px;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  font-size: 1.2em;
+.part {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -381,79 +315,4 @@ a {
     animation-timing-function: ease-in-out;
     animation-duration: 1500ms; }
 
-@media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 5em; }
-
-  h2 {
-    display: none; }
-
-  .enchanted, .french, .papilla, .taste {
-    margin-top: 15%;
-    margin-bottom: 30%;
-    font-size: 0.95em;
-    font-family: 'kalam'; }
-
-  .menu {
-    margin: 10%; }
-    .menu--title {
-      font-size: 1.3em; }
-
-  #soon {
-    padding-left: 0.2em;
-    padding-right: 0.2em; }
-
-  #footer {
-    font-size: 1em; } }
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 3em; }
-
-  #header {
-    width: 100%;
-    height: auto;
-    background-image: url(""); }
-
-  .enchanted, .french, .papilla, .taste {
-    margin-top: 15%;
-    margin-bottom: 30%;
-    font-size: 0.7em;
-    font-family: 'kalam'; }
-
-  .menu {
-    margin: 10%;
-    width: 90%; }
-    .menu__slate {
-      margin: 1%;
-      background-image: url("../image/lit-menu.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: block; }
-    .menu__title {
-      font-size: 1.9em; }
-
-  #footer {
-    font-size: 0.82em; }
-
-  #top, #down {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-  .btn:active {
-    animation-name: wizzle;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1500ms; }
-
-  .enchanted__img--top {
-    width: 35px;
-    height: 35px; }
-  .enchanted__img--down {
-    display: none; }
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    display: block; } }
-
-/*# sourceMappingURL=testt.css.map */
+/*# sourceMappingURL=trestt.css.map */
