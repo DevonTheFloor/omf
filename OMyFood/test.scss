@@ -101,6 +101,15 @@ header{
     background-size: contain;
 }
 
+h1{
+    padding: 1%;
+    font-family:'freebooter_scriptregular';
+    text-shadow: 4px 6px 4px darken(yellow,15),0px 0px 7px black;
+    text-align: center;
+    font-size: 7em;
+    color: yellow;
+}
+
 .bann{
     //w  </a>idth: 100%;
     background-color: $bann-color;
@@ -116,14 +125,7 @@ main{
     
 }
 
-h1{
-    padding: 1%;
-    font-family:'freebooter_scriptregular';
-    text-shadow: 4px 6px 4px darken(yellow,15),0px 0px 7px black;
-    text-align: center;
-    font-size: 7em;
-    color: yellow;
-}
+
 
 img {
   max-width: 100%;
@@ -132,18 +134,18 @@ img {
 
 //ne peut pas  &<spc>h4 ??????????
 h2, h3, h4{
-    padding: 3%;
     text-align: center;
 }
 h4{border: 2px solid blue;
     font-family: 'england_hand';
-    font-size: 1.9em;
+    font-size: 2em;
     &:hover + .uline{
         transform: scaleX(1);}  
     }
 
 .underl{border: 2px solid black;
-    height: 180px;
+    width: 25%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,23 +154,25 @@ h4{border: 2px solid blue;
 .uline{
     position: absolute;
     top: 100px;
-    width: 150Px;
+    width: 35%;
     height: 10px;
     background-color: red;
-     transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
     transform: scaleX(0);
     transition: transform 2000ms cubic-bezier(.32, 0, .07, 1);
 }
 
 article{
+    width: 100%;
     border: 8px solid yellow;
 }
 
-section{border: 15px solid purple;
+section{border: 2px solid purple;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
+    height: 20%;
 }
 
 .menu{
@@ -190,34 +194,36 @@ section{border: 15px solid purple;
 
 .wedge{
     border: 2px solid red;
+    width: 30%;
+    height: 50%;
 }
 
 
 .chapt{
-   border: 2px solid green;
+   border: 8px solid green;
     width: 100%;
+    height: 35%;
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
     
     &__line{
         border: 2px solid blue;
-        height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
-        width: 30%;
-        height: 30px;
+        width: 25%;
+        height:50%;;
         margin: 2%;
         &--ench{border: 2px solid yellow;
-            //margin: 1px;
+            width: 100%;
+            height: 50px;
            //background-color: $ench_font-color; 
-             background-image: url('../image/li-ench.png');
+            background-image: url('../image/li-ench.png');
             background-repeat: no-repeat;
             background-size: contain;
-            
-            &-R{
+            & R{
                  transform: rotateY(180deg);
             }
            
@@ -317,8 +323,8 @@ section{border: 15px solid purple;
         background-repeat: no-repeat;
         &--top{
                
-            width: 120px;
-            height: 120px;
+            width: 7%;
+            height: 50px;
         }
         &--down{
             margin-top:13%;
@@ -430,6 +436,7 @@ section{border: 15px solid purple;
 
 .eat{
     width: 90%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     &__dish{
