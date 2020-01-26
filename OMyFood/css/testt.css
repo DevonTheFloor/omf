@@ -146,43 +146,43 @@ section {
       background-repeat: no-repeat;
       background-size: contain; }
       .chapt__line--ench-R {
-        transform: rotate(180deg); }
+        transform: rotateY(180deg); }
     .chapt__line--papil {
       background-image: url("../image/li-papilla.png");
       background-repeat: no-repeat;
       background-size: contain; }
       .chapt__line--papil-R {
-        transform: rotate(180deg); }
+        transform: rotateY(180deg); }
     .chapt__line--appetite {
       background-image: url("../image/li-appetite.png");
       background-repeat: no-repeat;
       background-size: auto; }
       .chapt__line--appetite-R {
-        transform: rotate(180deg); }
+        transform: rotateY(180deg); }
     .chapt__line--joy {
       background-image: url("../image/li-joy.png");
       background-repeat: no-repeat;
       background-size: contain; }
       .chapt__line--joy-R {
-        transform: rotate(180deg); }
+        transform: rotateY(180deg); }
     .chapt__line--sweet {
       background-image: url("../image/li-sweet.png");
       background-repeat: no-repeat;
       background-size: contain; }
       .chapt__line--sweet-R {
-        transform: rotate(180deg); }
+        transform: rotateY(180deg); }
     .chapt__line--papil {
       background-image: url("../image/li-papil.png");
       background-repeat: no-repeat;
       background-size: contain; }
       .chapt__line--papil-R {
-        transform: rotate(180deg); }
+        transform: rotateY(180deg); }
     .chapt__line--taste {
       background-image: url("../image/li-taste.png");
       background-repeat: no-repeat;
       background-size: contain; }
       .chapt__line--taste-R {
-        transform: rotate(180deg); }
+        transform: rotateY(180deg); }
 
 .enchanted, .french, .papilla, .taste {
   margin-top: 15%;

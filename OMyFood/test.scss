@@ -130,6 +130,7 @@ img {
   height: auto;
 }
 
+//ne peut pas  &<spc>h4 ??????????
 h2, h3, h4{
     padding: 3%;
     text-align: center;
@@ -205,7 +206,7 @@ section{border: 2px solid black;
             background-size: contain;
             
             &-R{
-                 transform: rotate(180deg);
+                 transform: rotateY(180deg);
             }
            
         }
@@ -214,7 +215,7 @@ section{border: 2px solid black;
             background-repeat: no-repeat;
             background-size: contain;
             &-R{
-               transform: rotate(180deg); 
+               transform: rotateY(180deg); 
             }
         }
         &--appetite{
@@ -222,7 +223,7 @@ section{border: 2px solid black;
             background-repeat: no-repeat;
             background-size: auto;
             &-R{
-               transform: rotate(180deg); 
+               transform: rotateY(180deg); 
                 }
         }
         &--joy{
@@ -230,7 +231,7 @@ section{border: 2px solid black;
             background-repeat: no-repeat;
             background-size: contain;
                 &-R{
-                    transform: rotate(180deg); 
+                    transform: rotateY(180deg); 
                 }
         
         }
@@ -238,21 +239,21 @@ section{border: 2px solid black;
             background-repeat: no-repeat;
             background-size: contain;
             &-R{
-                transform: rotate(180deg); 
+                transform: rotateY(180deg); 
             }
         }
         &--papil{background-image: url('../image/li-papil.png');
             background-repeat: no-repeat;
             background-size: contain;
             &-R{
-                transform: rotate(180deg); 
+                transform: rotateY(180deg); 
             }
         }
         &--taste{background-image: url('../image/li-taste.png');
             background-repeat: no-repeat;
             background-size: contain;
             &-R{
-                transform: rotate(180deg); 
+                transform: rotateY(180deg); 
             }
         }
     }
