@@ -95,25 +95,29 @@ body{
 
 header{
     width: 100%;
-    height: 50%;
+    height: 40%;
     background-image: url("../image/decoo.png");
-   // background-repeat: ;
-    background-size: contain;
+   background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1{
-    padding: 1%;
+    padding: 0.2%;
     font-family:'freebooter_scriptregular';
     text-shadow: 4px 6px 4px darken(yellow,15),0px 0px 7px black;
     text-align: center;
     font-size: 7em;
     color: yellow;
+    transform: scale(1);
+    transition: transform 2000ms cubic-bezier(.32, 0, .07, 1);
+    &:hover{
+        transform: scale(1.5);
+    }
 }
 
 .bann{
-    //w  </a>idth: 100%;
+    border: 2px solid yellow;
     background-color: $bann-color;
-    //color:#e3c54f;
     box-shadow: 12px 12px 2px darken($bann-color,10) ;
 }
 
@@ -136,14 +140,14 @@ img {
 h2, h3, h4{
     text-align: center;
 }
-h4{border: 2px solid blue;
+h4{
     font-family: 'england_hand';
     font-size: 2em;
     &:hover + .uline{
         transform: scaleX(1);}  
     }
 
-.underl{border: 2px solid black;
+.underl{
     width: 25%;
     height: 50%;
     display: flex;
@@ -156,18 +160,26 @@ h4{border: 2px solid blue;
     top: 100px;
     width: 35%;
     height: 10px;
-    background-color: red;
+    background-color: $ench_font_color;
     transform-origin: 0% 50%;
     transform: scaleX(0);
     transition: transform 2000ms cubic-bezier(.32, 0, .07, 1);
+    &-tt{
+       background-color: green;  
+    }
+    &-pp{
+        background-color: blue;
+    }
+    &-fr{
+       background-color: blueviolet; 
+    }
 }
 
 article{
     width: 100%;
-    border: 8px solid yellow;
 }
 
-section{border: 2px solid purple;
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,14 +205,12 @@ section{border: 2px solid purple;
 }
 
 .wedge{
-    border: 2px solid red;
     width: 30%;
     height: 50%;
 }
 
 
 .chapt{
-   border: 8px solid green;
     width: 100%;
     height: 35%;
     display: flex;
@@ -209,26 +219,26 @@ section{border: 2px solid purple;
     justify-content: space-around;
     
     &__line{
-        border: 2px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
         width: 25%;
-        height:50%;;
-        margin: 2%;
-        &--ench{border: 2px solid yellow;
+        height:50px;
+        &--ench{
             width: 100%;
-            height: 50px;
+            height: 60px;
            //background-color: $ench_font-color; 
             background-image: url('../image/li-ench.png');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             & R{
                  transform: rotateY(180deg);
             }
            
         }
         &--papil{
+            width: 100%;
+            height: 50px;
              background-image: url('../image/li-papilla.png');
             background-repeat: no-repeat;
             background-size: contain;
@@ -237,6 +247,8 @@ section{border: 2px solid purple;
             }
         }
         &--appetite{
+            width: 100%;
+            height: 50px;
             background-image: url('../image/li-appetite.png');
             background-repeat: no-repeat;
             background-size: auto;
@@ -245,6 +257,8 @@ section{border: 2px solid purple;
                 }
         }
         &--joy{
+            width: 100%;
+            height: 50px;
             background-image: url('../image/li-joy.png');
             background-repeat: no-repeat;
             background-size: contain;
@@ -253,21 +267,36 @@ section{border: 2px solid purple;
                 }
         
         }
-        &--sweet{background-image: url('../image/li-sweet.png');
+        &--sweet{
+            width: 100%;
+            height: 50px;
+            background-image: url('../image/li-sweet.png');
             background-repeat: no-repeat;
             background-size: contain;
             &-R{
                 transform: rotateY(180deg); 
             }
         }
-        &--papil{background-image: url('../image/li-papil.png');
+        &--papil{
+            width: 100%;
+            height: 50px;
+            background-image: url('../image/li-papil.png');
             background-repeat: no-repeat;
             background-size: contain;
             &-R{
                 transform: rotateY(180deg); 
             }
+            &-pdk{
+                &-R{}
+            }
+            &-pdk2{
+                &-R{}
+            }
         }
-        &--taste{background-image: url('../image/li-taste.png');
+        &--taste{
+            width: 100%;
+            height: 50px;
+            background-image: url('../image/li-taste.png');
             background-repeat: no-repeat;
             background-size: contain;
             &-R{
@@ -467,9 +496,9 @@ section{border: 2px solid purple;
     color: yellow;
     display: flex;
     flex-direction: row;
-    padding-left: 3em;
-    padding-right: 3em;
-    border-radius: 55px;
+    padding-left: 1em;
+    padding-right: 2em;
+    border-radius: 50px;
     margin-bottom: 35%;
 }
 
@@ -483,8 +512,8 @@ section{border: 2px solid purple;
         height: 8px;
         border-radius: 25px;
          margin-left: 15%;
-           transform: translateY(0);
-            animation-name: waiting;
+        transform: translateY(0);
+        animation-name: waiting;
          animation-duration: 1500ms;
         animation-iteration-count: infinite;}
 }
@@ -496,8 +525,8 @@ section{border: 2px solid purple;
 }
 .dimtest{
         margin-top: 17%;
-        width: 150px;
-        height: 50%;
+        width: 90px;
+        height: 40%;
     }
 
 footer{
@@ -601,7 +630,7 @@ a{
     #header{
          width: 100%;
         height: auto;
-         background-image: url('');
+
     }
     %card{
     margin-top: 15%;
@@ -610,14 +639,13 @@ a{
     font-family: 'kalam';
 }
      .menu{
-         
-         margin: 10%;
-        width: 90%;
+        margin: 10%;
+        width: 100%;
          &__slate{
-             margin: 1%;
+            width: 90%;
             background-image: url('../image/lit-menu.png'); 
-             background-repeat: no-repeat;
-             background-size: cover;
+             background-repeat: repeat;
+
              display: block;
          }
          &__title{
