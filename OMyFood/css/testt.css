@@ -151,16 +151,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-around;
-  /*&--taste{
-      width: 100%;
-      height: 50px;
-      background-image: url('../image/li-taste.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      &-R{
-          transform: rotateY(180deg);}
-      }*/ }
+  justify-content: space-around; }
   .chapt__line {
     display: flex;
     flex-direction: column;
@@ -243,14 +234,7 @@ section {
       height: 60px;
       background-image: url("../image/li-taste.png");
       background-repeat: no-repeat;
-      background-size: cover;
-      /*width: 100%;
-      height: 50px;
-      background-image: url('../image/li-taste.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      &-R{
-          transform: rotateY(180deg);}*/ }
+      background-size: cover; }
       .chapt__line--taste-R {
         transform: rotateY(180deg); }
 

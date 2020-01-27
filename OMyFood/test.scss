@@ -274,27 +274,9 @@ section{
            
         &--taste{
             @include line ($url-img: '../image/li-taste.png');
-            /*width: 100%;
-            height: 50px;
-            background-image: url('../image/li-taste.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            &-R{
-                transform: rotateY(180deg);}*/
             }
-        
         }
-
-        /*&--taste{
-            width: 100%;
-            height: 50px;
-            background-image: url('../image/li-taste.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            &-R{
-                transform: rotateY(180deg);}
-            }*/
-        }
+    }
 
 
 %card{
