@@ -279,12 +279,12 @@ section{
     }
 
 
-%card{
+/*%card{
     margin-top: 15%;
     margin-bottom: 30%;
     font-size: 1.3em;
     font-family: 'kalam';
-}
+}*/
 
 @mixin card ($color){
     margin-top: 15%;
@@ -319,31 +319,6 @@ section{
 
 .enchanted{
     @include card ($enchanted-color);
-   /* @extend %card;
-    background-color: $enchanted-color;
-    border: 2px solid darken($enchanted-color,10);
-    &--slate{
-    background-color: $enchanted-color;
-    position: relative;
-    z-index: 1;
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
-    }
-    &::after {
-        content:" ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: darken($enchanted-color, 10);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }
-  }*/
     &__subtitle{
         font-weight: bolder;
         font-size: 1.5em;
@@ -368,31 +343,6 @@ section{
 
 .french{
     @include card ($french-color);
-   /* @extend %card;
-    background-color: #fbf3fb;
-    border: 2px solid #f0d8fb;
-    &--slate {
-    background-color: $french-color;
-    position: relative;
-    z-index: 1;
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
-    }
-    &::after {
-        content:" ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: darken($french-color, 10);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }
-  }*/
 }
 .appetite{
     font-family: 'comic sans ms';
@@ -406,65 +356,11 @@ section{
 }
 
 .papilla{
-      @extend %card;
-    background-color: #ebebeb;
-    border: 2px solid #f4caff;
-     &--slate {
-    background-color: $papilla-color;
-    position: relative;
-    z-index: 1;
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
-    }
-    &::after {
-        content:" ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: darken($papilla-color, 10);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-        }
-    }
-    &__subtitle{
-        font-weight: bolder;
-        font-size: 5em;
-        color: blue;
-
-    }
+    @include card ($papilla-color);
 }
 
 .taste{
-      @extend %card;
-    background-color: #fbfcfb;
-    border: 2px solid #d0f3c6;
-     &--slate {
-    background-color: $taste-color;
-    position: relative;
-    z-index: 1;
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
-    }
-    &::after {
-        content:" ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: darken($taste-color, 10);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }
-  }
+    @include card($taste-color);
 }
 
 .eat{
