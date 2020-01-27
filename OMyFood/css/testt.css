@@ -238,15 +238,44 @@ section {
       .chapt__line--taste-R {
         transform: rotateY(180deg); }
 
-.enchanted, .french, .papilla, .taste {
+.french, .papilla, .taste {
   margin-top: 15%;
   margin-bottom: 30%;
   font-size: 1.3em;
   font-family: 'kalam'; }
 
 .enchanted {
+  margin-top: 15%;
+  margin-bottom: 30%;
+  font-size: 1.3em;
+  font-family: 'kalam';
   background-color: #fbdcdb;
-  border: 2px solid #f6afad; }
+  border: 2px solid #f6afad;
+ /* @extend %card;
+  background-color: $enchanted-color;
+  border: 2px solid darken($enchanted-color,10);
+  &--slate{
+  background-color: $enchanted-color;
+  position: relative;
+  z-index: 1;
+  &:hover {
+      &::after {
+          opacity: 1;
+      }
+  }
+  &::after {
+      content:" ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: darken($enchanted-color, 10);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms;
+  }
+}*/ }
   .enchanted--slate {
     background-color: #fbdcdb;
     position: relative;
@@ -479,7 +508,7 @@ a {
   h2 {
     display: none; }
 
-  .enchanted, .french, .papilla, .taste {
+  .french, .papilla, .taste {
     margin-top: 15%;
     margin-bottom: 30%;
     font-size: 0.95em;
@@ -504,7 +533,7 @@ a {
     width: 100%;
     height: auto; }
 
-  .enchanted, .french, .papilla, .taste {
+  .french, .papilla, .taste {
     margin-top: 15%;
     margin-bottom: 30%;
     font-size: 0.7em;
