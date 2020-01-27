@@ -151,7 +151,16 @@ section {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-around; }
+  justify-content: space-around;
+  /*&--taste{
+      width: 100%;
+      height: 50px;
+      background-image: url('../image/li-taste.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      &-R{
+          transform: rotateY(180deg);}
+      }*/ }
   .chapt__line {
     display: flex;
     flex-direction: column;
@@ -229,14 +238,21 @@ section {
              transform: rotateY(180deg); }*/ }
           .chapt__line--papil-pdk-pdk2-R {
             transform: rotateY(180deg); }
-  .chapt--taste {
-    width: 100%;
-    height: 50px;
-    background-image: url("../image/li-taste.png");
-    background-repeat: no-repeat;
-    background-size: contain; }
-    .chapt--taste-R {
-      transform: rotateY(180deg); }
+    .chapt__line--taste {
+      width: 100%;
+      height: 60px;
+      background-image: url("../image/li-taste.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /*width: 100%;
+      height: 50px;
+      background-image: url('../image/li-taste.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      &-R{
+          transform: rotateY(180deg);}*/ }
+      .chapt__line--taste-R {
+        transform: rotateY(180deg); }
 
 .enchanted, .french, .papilla, .taste {
   margin-top: 15%;
