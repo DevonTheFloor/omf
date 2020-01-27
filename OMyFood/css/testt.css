@@ -238,7 +238,7 @@ section {
       .chapt__line--taste-R {
         transform: rotateY(180deg); }
 
-.french, .papilla, .taste {
+.papilla, .taste {
   margin-top: 15%;
   margin-bottom: 30%;
   font-size: 1.3em;
@@ -310,8 +310,37 @@ section {
       height: 90px; }
 
 .french {
+  margin-top: 15%;
+  margin-bottom: 30%;
+  font-size: 1.3em;
+  font-family: 'kalam';
   background-color: #fbf3fb;
-  border: 2px solid #f0d8fb; }
+  border: 2px solid #eecdee;
+ /* @extend %card;
+  background-color: #fbf3fb;
+  border: 2px solid #f0d8fb;
+  &--slate {
+  background-color: $french-color;
+  position: relative;
+  z-index: 1;
+  &:hover {
+      &::after {
+          opacity: 1;
+      }
+  }
+  &::after {
+      content:" ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: darken($french-color, 10);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms;
+  }
+}*/ }
   .french--slate {
     background-color: #fbf3fb;
     position: relative;
@@ -508,7 +537,7 @@ a {
   h2 {
     display: none; }
 
-  .french, .papilla, .taste {
+  .papilla, .taste {
     margin-top: 15%;
     margin-bottom: 30%;
     font-size: 0.95em;
@@ -533,7 +562,7 @@ a {
     width: 100%;
     height: auto; }
 
-  .french, .papilla, .taste {
+  .papilla, .taste {
     margin-top: 15%;
     margin-bottom: 30%;
     font-size: 0.7em;

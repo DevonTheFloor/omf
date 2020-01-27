@@ -291,10 +291,10 @@ section{
     margin-bottom: 30%;
     font-size: 1.3em;
     font-family: 'kalam';
-     background-color: $enchanted-color;
-    border: 2px solid darken($enchanted-color,10);
+     background-color: $color;
+    border: 2px solid darken($color,10);
     &--slate{
-    background-color: $enchanted-color;
+    background-color: $color;
     position: relative;
     z-index: 1;
     &:hover {
@@ -309,7 +309,7 @@ section{
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: darken($enchanted-color, 10);
+        background-color: darken($color, 10);
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
@@ -367,7 +367,8 @@ section{
 }
 
 .french{
-    @extend %card;
+    @include card ($french-color);
+   /* @extend %card;
     background-color: #fbf3fb;
     border: 2px solid #f0d8fb;
     &--slate {
@@ -391,7 +392,7 @@ section{
         z-index: -1;
         transition: opacity 250ms;
     }
-}
+  }*/
 }
 .appetite{
     font-family: 'comic sans ms';
