@@ -242,23 +242,8 @@ section{
             @include line ($url-img: '../image/li-papil.png');
                 &-pdk{
                     @include line ($url-img: '../image/li-pdk.png');
-               /* width: 100%;
-                height: 50px;
-                background-image: url('../image/li-pdk.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                &-R{
-                   transform: rotateY(180deg);
-                }*/
                 &-pdk2{
                     @include line ($url-img: '../image/li-pdk2.png'); 
-                /*width: 100%;
-                height: 50px;
-                background-image: url('../image/li-pdk2.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                &-R{
-                   transform: rotateY(180deg); }*/
                     }
                 }
             }
@@ -268,14 +253,6 @@ section{
             }
         }
     }
-
-
-/*%card{
-    margin-top: 15%;
-    margin-bottom: 30%;
-    font-size: 1.3em;
-    font-family: 'kalam';
-}*/
 
 @mixin card ($color){
   margin-top: 15%;
