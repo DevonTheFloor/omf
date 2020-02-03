@@ -1,3 +1,4 @@
+//$menu-out: #95f6d6;
 $enchanted-color: #fbdcdb;
 $ench_font_color: #542c32;
 $french-color: #fbf3fb;
@@ -5,30 +6,7 @@ $papilla-color: #ebebeb;
 $taste-color: #fbfcfb;
 $bann-color: #539b84;
 $bgcolor: #F5F3DF;
-
-@font-face {
-  font-family: 'freebooter_scriptregular';
-    src: url('freebooterscript-webfont.eot');
-    src: url('../police/freeb/freebooterscript-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../police/freeb/freebooterscript-webfont.woff2') format('woff2'),
-         url('../police/freeb/freebooterscript-webfont.woff') format('woff'),
-         url('../police/freeb/freebooterscript-webfont.ttf') format('truetype'),
-         url('../police/freeb/freebooterscript-webfont.svg#freebooter_scriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'england_hand';
-  src: url('../police/englandh/england-webfont.eot');
-  src: url('../police/englandh/england-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../police/englandh/england-webfont.woff2') format('woff2'),
-       url('../police/englandh/england-webfont.woff') format('woff'),
-       url('../police/englandh/england-webfont.ttf') format('truetype'),
-       url('../police/englandh/england-webfont.svg#england_hand_dbregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+$font-color: #fccc44;
 
 @font-face {
   font-family: 'kalam';
@@ -90,7 +68,6 @@ body{
 header{
   width: 100%;
   height: 40%;
-  background-image: url("../image/decoo.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -98,10 +75,10 @@ header{
 h1{
   padding: 0.2%;
   font-family:'freebooter_scriptregular';
-  text-shadow: 4px 6px 4px darken(yellow,15),0px 0px 7px black;
+  text-shadow: 4px 6px 4px darken($font-color,15),0px 0px 7px black;
   text-align: center;
   font-size: 7em;
-  color: yellow;
+  color: $font-color;
   transform: scale(1);
   transition: transform 2000ms cubic-bezier(.32, 0, .07, 1);
   &:hover{
@@ -110,7 +87,7 @@ h1{
 }
 
 .bann{
-  border: 2px solid yellow;
+  border: 2px solid $font-color;
   background-color: $bann-color;
   box-shadow: 12px 12px 2px darken($bann-color,10) ;
 }
@@ -122,15 +99,10 @@ main{
   width: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-//ne peut pas  &<spc>h4 ??????????
 h2, h3, h4{
   text-align: center;
 }
+
 h4{
   font-family: 'england_hand';
   font-size: 2em;
@@ -146,6 +118,7 @@ h4{
   align-items: center;
   position: relative;
 }
+
 .uline{
   position: absolute;
   top: 100px;
@@ -163,12 +136,6 @@ h4{
   }
   &-fr{
      background-color: blueviolet; 
-  }
-  &-ap{
-    background-color: #cc8437;
-  }
-  &-jy{
-    background-color: #ad74a3;
   }
 }
 
@@ -194,11 +161,15 @@ section{
   box-shadow: 18px 18px 20px 12px silver,3px 3px grey; 
   margin: 10%;
   border: 2px darken(yellow,20);
-  &--title{
+  &--slate{
     font-size: 1.5em;
     color: darken(yellow,20);
     text-shadow: 4px 6px 4px darken(yellow,15);
+    transform: scale(1) 3s ease-in-out;
+    &:hover{
+      transform: scale(2);
     }
+  }
 }
 
 .wedge{
@@ -258,84 +229,116 @@ section{
             }
         }
     }
-  }
-}
 
-@mixin card ($color-card){
+@mixin card ($color){
   margin-top: 15%;
   margin-bottom: 30%;
   font-size: 1.3em;
   font-family: 'kalam';
-   //@extend %card;
-  background-color: $color-card;
-  border: 2px solid darken($color-card,10);
+  background-color: $color;
+  border: 2px solid darken($color,10);
   &--slate{
-  background-color: $color-card;
+  background-color: $color;
   position: relative;
   z-index: 1;
   &:hover {
-      &::after {
-          opacity: 1;
-      }
+    &::after {
+        opacity: 1;
+    }
   }
   &::after {
-      content:" ";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: darken($color-card, 10);
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms;
+    content:" ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: darken($color, 10);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
-}
+  }
 }
 
 .enchanted{
   @include card ($enchanted-color);
   &__subtitle{
-  font-weight: bolder;
-  font-size: 1.5em;
+  font-family: 'Ma Shan Zheng', cursive; 
+  font-weight: bold;
+  font-size: 4em;
+    &--cat{
+      font-family: 'kalam';
+    }
+    &--end{
+      font-family: 'Ma Shan Zheng', cursive; 
+      font-size: 2em;
+    }
   }
   &__img{
-  border: 2px solid green;
-  background-image: url('../image/note.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-    &--top{
+  font-size: 5em;
 
-        width: 7%;
-        height: 50px;
+    &--top{
+      font-size: 6em;  
     }
     &--down{
-        margin-top:13%;
-        width: 90px;
-        height: 90px;
+      margin-top: 5%;
+      font-size: 3em;  
+
     }
   }
+}
+
+span{
+  background: -webkit-gradient(linear, left top, right bottom, from(#f15d61), to(#f6916a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .french{
   @include card ($french-color);
+  &__subtitle{
+    font-size: 4em;
+    font-family: 'Cookie', cursive;
+    font-family: 'Dancing Script', cursive; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc8437), to(#9b6cbb));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
+
 .appetite{
   font-family: 'comic sans ms';
   color: #cc8437;
 }
+
 .joy{
   color: #ad74a3;
 }
+
 .sweetened{
   color: #9b6cbb;
 }
+
 .papilla{
   @include card ($papilla-color);
+  &__subtitle{
+    font-size: 4em;
+    font-family: 'Dancing Script', cursive; 
+    background: -webkit-gradient(linear, left top, left bottom, from(#093de2), to(#0889fb));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &--cat{
+      font-family: 'kalam';
+    }
+  }
 }
 
 .taste{
   @include card($taste-color);
+  &__subtitle{
+    font-family: 'Merienda One', cursive; 
+  }
 }
 
 .eat{
@@ -348,7 +351,7 @@ section{
   flex-direction: row;
   justify-content: space-between;
     &__price{
-        font-weight: bold;
+        font-weight: bolder;
     }
   }
 }
@@ -403,8 +406,6 @@ section{
 }
 
 footer{
-  background-image: url("../image/decob.png");
-  // background-repeat: ;
   padding-top: 1%;
   position: fixed;
   bottom: 2px;
@@ -451,14 +452,11 @@ a{
 98% {
   transform: translate(-8px, -7px) rotate(-2.5deg); }
 }
+
 .btn{
-  background-color: green;
-  margin-bottom: 15%;
-  color: yellow;
+  color: $font-color;
+  font-size: 1.5em;
   text-shadow: 4px 6px 4px darken(yellow,15);
- border: 2px solid yellow;
-  border-radius: 20%;
-  box-shadow: 4px 6px 4px darken(yellow,15);
   &:hover{
     animation-name: wizzle;
     animation-timing-function: ease-in-out;
@@ -546,23 +544,16 @@ a{
       width: 35px;
       height: 35px;
     }
-    &__img{
-        &--top{
-            width: 35px;
-            height: 35px;
-        }
-        &--down{
-           display: none;
-        }
-      }
-   }
-    
-    img{
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-    }  
-}
+    &--down{
+     display: none;
+    }
+    }
+ }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
   .uline{
     display: none;
   }
