@@ -6,6 +6,7 @@ $papilla-color: #ebebeb;
 $taste-color: #fbfcfb;
 $bann-color: #539b84;
 $bgcolor: #F5F3DF;
+$font-color: #fccc44;
 
 @font-face {
   font-family: 'freebooter_scriptregular';
@@ -91,7 +92,6 @@ body{
 header{
   width: 100%;
   height: 40%;
-  background-image: url("../image/decoo.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -99,10 +99,10 @@ header{
 h1{
   padding: 0.2%;
   font-family:'freebooter_scriptregular';
-  text-shadow: 4px 6px 4px darken(yellow,15),0px 0px 7px black;
+  text-shadow: 4px 6px 4px darken($font-color,15),0px 0px 7px black;
   text-align: center;
   font-size: 7em;
-  color: yellow;
+  color: $font-color;
   transform: scale(1);
   transition: transform 2000ms cubic-bezier(.32, 0, .07, 1);
   &:hover{
@@ -111,7 +111,7 @@ h1{
 }
 
 .bann{
-  border: 2px solid yellow;
+  border: 2px solid $font-color;
   background-color: $bann-color;
   box-shadow: 12px 12px 2px darken($bann-color,10) ;
 }
@@ -128,10 +128,10 @@ img {
   height: auto;
 }
 
-//ne peut pas  &<spc>h4 ??????????
 h2, h3, h4{
   text-align: center;
 }
+
 h4{
   font-family: 'england_hand';
   font-size: 2em;
@@ -147,6 +147,7 @@ h4{
   align-items: center;
   position: relative;
 }
+
 .uline{
   position: absolute;
   top: 100px;
@@ -292,23 +293,26 @@ section{
   font-size: 1.5em;
   }
   &__img{
-  border: 2px solid green;
-  background-image: url('../image/note.png');
+  font-size: 5em;
+ 
+  /*background-image: url('../image/note.png');
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
     &--top{
-
-        width: 7%;
-        height: 50px;
+      font-size: 5em;  
     }
     &--down{
-        margin-top:13%;
-        width: 90px;
-        height: 90px;
+      margin-top: 3%;
+       font-size: 3em;  
+
     }
   }
 }
-
+span{
+  background: -webkit-gradient(linear, left top, right bottom, from(#f15d61), to(#f6916a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .french{
   @include card ($french-color);
 }
@@ -325,6 +329,13 @@ section{
 
 .papilla{
   @include card ($papilla-color);
+  &__subtitle{
+    font-size: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(
+#093de2), to(#0889fb));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .taste{
@@ -396,8 +407,6 @@ section{
 }
 
 footer{
-  background-image: url("../image/decob.png");
-  // background-repeat: ;
   padding-top: 1%;
   position: fixed;
   bottom: 2px;
@@ -444,14 +453,11 @@ a{
 98% {
   transform: translate(-8px, -7px) rotate(-2.5deg); }
 }
+
 .btn{
-  background-color: green;
-  margin-bottom: 15%;
-  color: yellow;
+  color: $font-color;
+  font-size: 1.5em;
   text-shadow: 4px 6px 4px darken(yellow,15);
- border: 2px solid yellow;
-  border-radius: 20%;
-  box-shadow: 4px 6px 4px darken(yellow,15);
   &:hover{
     animation-name: wizzle;
     animation-timing-function: ease-in-out;

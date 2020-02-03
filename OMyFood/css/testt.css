@@ -52,24 +52,23 @@ body {
 header {
   width: 100%;
   height: 40%;
-  background-image: url("../image/decoo.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
 h1 {
   padding: 0.2%;
   font-family: 'freebooter_scriptregular';
-  text-shadow: 4px 6px 4px #b3b300, 0px 0px 7px black;
+  text-shadow: 4px 6px 4px #f0b204, 0px 0px 7px black;
   text-align: center;
   font-size: 7em;
-  color: yellow;
+  color: #fccc44;
   transform: scale(1);
   transition: transform 2000ms cubic-bezier(0.32, 0, 0.07, 1); }
   h1:hover {
     transform: scale(1.2); }
 
 .bann {
-  border: 2px solid yellow;
+  border: 2px solid #fccc44;
   background-color: #539b84;
   box-shadow: 12px 12px 2px #417a68; }
 
@@ -203,15 +202,7 @@ section {
         height: 60px;
         background-image: url("../image/li-pdk.png");
         background-repeat: no-repeat;
-        background-size: cover;
-        /* width: 100%;
-         height: 50px;
-         background-image: url('../image/li-pdk.png');
-         background-repeat: no-repeat;
-         background-size: contain;
-         &-R{
-            transform: rotateY(180deg);
-         }*/ }
+        background-size: cover; }
         .chapt__line--papil-pdk-R {
           transform: rotateY(180deg); }
         .chapt__line--papil-pdk-pdk2 {
@@ -219,14 +210,7 @@ section {
           height: 60px;
           background-image: url("../image/li-pdk2.png");
           background-repeat: no-repeat;
-          background-size: cover;
-          /*width: 100%;
-          height: 50px;
-          background-image: url('../image/li-pdk2.png');
-          background-repeat: no-repeat;
-          background-size: contain;
-          &-R{
-             transform: rotateY(180deg); }*/ }
+          background-size: cover; }
           .chapt__line--papil-pdk-pdk2-R {
             transform: rotateY(180deg); }
     .chapt__line--taste {
@@ -238,12 +222,6 @@ section {
       .chapt__line--taste-R {
         transform: rotateY(180deg); }
 
-/*%card{
-    margin-top: 15%;
-    margin-bottom: 30%;
-    font-size: 1.3em;
-    font-family: 'kalam';
-}*/
 .enchanted {
   margin-top: 15%;
   margin-bottom: 30%;
@@ -272,17 +250,20 @@ section {
     font-weight: bolder;
     font-size: 1.5em; }
   .enchanted__img {
-    border: 2px solid green;
-    background-image: url("../image/note.png");
+    font-size: 5em;
+    /*background-image: url('../image/note.png');
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;*/ }
     .enchanted__img--top {
-      width: 7%;
-      height: 50px; }
+      font-size: 5em; }
     .enchanted__img--down {
-      margin-top: 13%;
-      width: 90px;
-      height: 90px; }
+      margin-top: 3%;
+      font-size: 3em; }
+
+span {
+  background: -webkit-gradient(linear, left top, right bottom, from(#f15d61), to(#f6916a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .french {
   margin-top: 15%;
@@ -343,6 +324,11 @@ section {
       opacity: 0;
       z-index: -1;
       transition: opacity 250ms; }
+  .papilla__subtitle {
+    font-size: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#093de2), to(#0889fb));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .taste {
   margin-top: 15%;
@@ -397,8 +383,6 @@ section {
   color: yellow;
   display: flex;
   flex-direction: row;
-  /*padding-left: 1em;
-  padding-right: 2em;*/
   border-radius: 50px;
   margin-bottom: 35%; }
 
@@ -429,7 +413,6 @@ section {
   height: 40%; }
 
 footer {
-  background-image: url("../image/decob.png");
   padding-top: 1%;
   position: fixed;
   bottom: 2px;
@@ -472,13 +455,9 @@ a {
   98% {
     transform: translate(-8px, -7px) rotate(-2.5deg); } }
 .btn {
-  background-color: green;
-  margin-bottom: 15%;
-  color: yellow;
-  text-shadow: 4px 6px 4px #b3b300;
-  border: 2px solid yellow;
-  border-radius: 20%;
-  box-shadow: 4px 6px 4px #b3b300; }
+  color: #fccc44;
+  font-size: 1.5em;
+  text-shadow: 4px 6px 4px #b3b300; }
   .btn:hover {
     animation-name: wizzle;
     animation-timing-function: ease-in-out;
