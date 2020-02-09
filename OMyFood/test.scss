@@ -151,6 +151,18 @@ section{
   height: 20%;
 }
 
+@mixin degfont($color1,$color2){
+  background: -webkit-gradient(linear, left top, left bottom, from($color1), to($color2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.do{
+  margin-bottom: 0%;
+  margin-top: 0%;
+  margin-left: 42%;
+  font-size: 5em;
+  z-index: -1;
+}
 .menu{
   display: flex;
   flex-direction: column;
@@ -161,14 +173,53 @@ section{
   box-shadow: 18px 18px 20px 12px silver,3px 3px grey; 
   margin: 10%;
   border: 2px darken(yellow,20);
-  &--slate{
-    font-size: 1.5em;
-    color: darken(yellow,20);
-    text-shadow: 4px 6px 4px darken(yellow,15);
-    transform: scale(1) 3s ease-in-out;
-    &:hover{
-      transform: scale(2);
+  &__slate{
+    font-family: 'Merienda One', cursive; 
+    //text-shadow: 2px 2px 2px darken(grey,15);
+    transform: scale(1) 2000ms cubic-bezier(.32, 0, .07, 1);
+    &--title{
+      font-size: 2.5em;
+      }
+    &--ench{
+      margin-top: 2%;
+      font-family: 'Ma Shan Zheng', cursive;
+      color: $ench_font_color;
+      font-size: 3em;
+      &-M{
+        font-size: 2.5em;
+        color: $ench_font_color;
+      }
+      }
+    &--french{
+      font-family: 'Cookie', cursive;
+      @include degfont (#cc8437,#9b6cbb);
+      font-size: 3em;
+      &-M{
+        font-size: 2.5em;
+        color: #cc8437;
+      }
+      }
+    &--papil{
+      font-family: 'Dancing Script', cursive;
+      @include degfont (#093de2,#0889fb);
+      font-size: 3em;
+      &-M{
+        font-size: 2.5em;
+        color: #093de2;
+      }
+      }
+    &--taste{
+      font-family: 'Merienda One', cursive;
+       @include degfont (#3e923a,#beff7f);
+      font-size: 2.5em;
+      &-M{
+        font-size: 2.5em;
+        color: #3e923a;
+      }
+      }
     }
+  &:hover > .menu__slate{
+      transform: scale(1.2);
   }
 }
 
@@ -216,14 +267,13 @@ section{
         }
         &--papil{
             @include line ($url-img: '../image/li-papil.png');
-                &-pdk{
-                    @include line ($url-img: '../image/li-pdk.png');
-                &-pdk2{
-                    @include line ($url-img: '../image/li-pdk2.png'); 
-                    }
-                }
             }
-           
+        &--pdk{
+          @include line ($url-img: '../image/li-pdk.png');
+        }
+        &--pdk2{
+        @include line ($url-img: '../image/li-pdk2.png');
+        }     
         &--taste{
             @include line ($url-img: '../image/li-taste.png');
             }
@@ -275,6 +325,10 @@ section{
       font-size: 2em;
     }
   }
+  &--slate{
+    padding-top: 13%;
+    padding-bottom: 12%;
+  }
   &__img{
   font-size: 5em;
 
@@ -300,10 +354,7 @@ span{
   &__subtitle{
     font-size: 4em;
     font-family: 'Cookie', cursive;
-    font-family: 'Dancing Script', cursive; 
-    background: -webkit-gradient(linear, left top, left bottom, from(#cc8437), to(#9b6cbb));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include degfont (#cc8437,#9b6cbb);
   }
 }
 
@@ -325,9 +376,7 @@ span{
   &__subtitle{
     font-size: 4em;
     font-family: 'Dancing Script', cursive; 
-    background: -webkit-gradient(linear, left top, left bottom, from(#093de2), to(#0889fb));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+     @include degfont (#093de2,#0889fb);
     &--cat{
       font-family: 'kalam';
     }
@@ -338,6 +387,7 @@ span{
   @include card($taste-color);
   &__subtitle{
     font-family: 'Merienda One', cursive; 
+    @include degfont (#3e923a,#beff7f);
   }
 }
 
@@ -371,7 +421,7 @@ span{
 }
 
 #soon{
-  color: yellow;
+  color: $font-color;
   display: flex;
   flex-direction: row;
   border-radius: 50px;
@@ -383,7 +433,7 @@ span{
   flex-direction: row;
   background-color: #539b84;
   &__point{
-    background-color: yellow;
+    background-color: $font-color;
     width: 8px;
     height: 8px;
     border-radius: 25px;
@@ -421,10 +471,9 @@ footer{
 a{
   text-decoration: none;
   &:visited{
-      color: darken(yellow,20);
+      color: darken($font-color,20);
   }
 }
-
 
 @keyframes wizzle {
 2% {
@@ -463,7 +512,6 @@ a{
     animation-duration: 1500ms;
   }
 }
-
 
 //==================== MEDIA =====================
 

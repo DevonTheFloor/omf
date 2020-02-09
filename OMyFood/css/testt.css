@@ -109,6 +109,13 @@ section {
   width: 90%;
   height: 20%; }
 
+.do {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  margin-left: 42%;
+  font-size: 5em;
+  z-index: -1; }
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -119,13 +126,48 @@ section {
   box-shadow: 18px 18px 20px 12px silver,3px 3px grey;
   margin: 10%;
   border: 2px #999900; }
-  .menu--slate {
-    font-size: 1.5em;
-    color: #999900;
-    text-shadow: 4px 6px 4px #b3b300;
-    transform: scale(1) 3s ease-in-out; }
-    .menu--slate:hover {
-      transform: scale(2); }
+  .menu__slate {
+    font-family: 'Merienda One', cursive;
+    transform: scale(1) 2000ms cubic-bezier(0.32, 0, 0.07, 1); }
+    .menu__slate--title {
+      font-size: 2.5em; }
+    .menu__slate--ench {
+      margin-top: 2%;
+      font-family: 'Ma Shan Zheng', cursive;
+      color: #542c32;
+      font-size: 3em; }
+      .menu__slate--ench-M {
+        font-size: 2.5em;
+        color: #542c32; }
+    .menu__slate--french {
+      font-family: 'Cookie', cursive;
+      background: -webkit-gradient(linear, left top, left bottom, from(#cc8437), to(#9b6cbb));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3em; }
+      .menu__slate--french-M {
+        font-size: 2.5em;
+        color: #cc8437; }
+    .menu__slate--papil {
+      font-family: 'Dancing Script', cursive;
+      background: -webkit-gradient(linear, left top, left bottom, from(#093de2), to(#0889fb));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3em; }
+      .menu__slate--papil-M {
+        font-size: 2.5em;
+        color: #093de2; }
+    .menu__slate--taste {
+      font-family: 'Merienda One', cursive;
+      background: -webkit-gradient(linear, left top, left bottom, from(#3e923a), to(#beff7f));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.5em; }
+      .menu__slate--taste-M {
+        font-size: 2.5em;
+        color: #3e923a; }
+  .menu:hover > .menu__slate {
+    transform: scale(1.2); }
 
 .wedge {
   width: 30%;
@@ -184,22 +226,22 @@ section {
       background-size: cover; }
       .chapt__line--papil-R {
         transform: rotateY(180deg); }
-      .chapt__line--papil-pdk {
-        width: 100%;
-        height: 60px;
-        background-image: url("../image/li-pdk.png");
-        background-repeat: no-repeat;
-        background-size: cover; }
-        .chapt__line--papil-pdk-R {
-          transform: rotateY(180deg); }
-        .chapt__line--papil-pdk-pdk2 {
-          width: 100%;
-          height: 60px;
-          background-image: url("../image/li-pdk2.png");
-          background-repeat: no-repeat;
-          background-size: cover; }
-          .chapt__line--papil-pdk-pdk2-R {
-            transform: rotateY(180deg); }
+    .chapt__line--pdk {
+      width: 100%;
+      height: 60px;
+      background-image: url("../image/li-pdk.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .chapt__line--pdk-R {
+        transform: rotateY(180deg); }
+    .chapt__line--pdk2 {
+      width: 100%;
+      height: 60px;
+      background-image: url("../image/li-pdk2.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .chapt__line--pdk2-R {
+        transform: rotateY(180deg); }
     .chapt__line--taste {
       width: 100%;
       height: 60px;
@@ -242,6 +284,9 @@ section {
     .enchanted__subtitle--end {
       font-family: 'Ma Shan Zheng', cursive;
       font-size: 2em; }
+  .enchanted--slate {
+    padding-top: 13%;
+    padding-bottom: 12%; }
   .enchanted__img {
     font-size: 5em; }
     .enchanted__img--top {
@@ -282,7 +327,6 @@ span {
   .french__subtitle {
     font-size: 4em;
     font-family: 'Cookie', cursive;
-    font-family: 'Dancing Script', cursive;
     background: -webkit-gradient(linear, left top, left bottom, from(#cc8437), to(#9b6cbb));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -355,7 +399,10 @@ span {
       z-index: -1;
       transition: opacity 250ms; }
   .taste__subtitle {
-    font-family: 'Merienda One', cursive; }
+    font-family: 'Merienda One', cursive;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e923a), to(#beff7f));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .eat {
   width: 90%;
@@ -382,7 +429,7 @@ span {
   justify-content: space-around; }
 
 #soon {
-  color: yellow;
+  color: #fccc44;
   display: flex;
   flex-direction: row;
   border-radius: 50px;
@@ -393,7 +440,7 @@ span {
   flex-direction: row;
   background-color: #539b84; }
   .wait__point {
-    background-color: yellow;
+    background-color: #fccc44;
     width: 8px;
     height: 8px;
     border-radius: 25px;
@@ -429,7 +476,7 @@ footer {
 a {
   text-decoration: none; }
   a:visited {
-    color: #999900; }
+    color: #d79f03; }
 
 @keyframes wizzle {
   2% {
