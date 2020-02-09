@@ -110,7 +110,11 @@ section {
   height: 20%; }
 
 .do {
-  font-size: 3em; }
+  margin-bottom: 0%;
+  margin-top: 0%;
+  margin-left: 42%;
+  font-size: 5em;
+  z-index: -1; }
 
 .menu {
   display: flex;
@@ -128,6 +132,7 @@ section {
     .menu__slate--title {
       font-size: 2.5em; }
     .menu__slate--ench {
+      margin-top: 2%;
       font-family: 'Ma Shan Zheng', cursive;
       color: #542c32;
       font-size: 3em; }
@@ -221,22 +226,22 @@ section {
       background-size: cover; }
       .chapt__line--papil-R {
         transform: rotateY(180deg); }
-      .chapt__line--papil-pdk {
-        width: 100%;
-        height: 60px;
-        background-image: url("../image/li-pdk.png");
-        background-repeat: no-repeat;
-        background-size: cover; }
-        .chapt__line--papil-pdk-R {
-          transform: rotateY(180deg); }
-        .chapt__line--papil-pdk-pdk2 {
-          width: 100%;
-          height: 60px;
-          background-image: url("../image/li-pdk2.png");
-          background-repeat: no-repeat;
-          background-size: cover; }
-          .chapt__line--papil-pdk-pdk2-R {
-            transform: rotateY(180deg); }
+    .chapt__line--pdk {
+      width: 100%;
+      height: 60px;
+      background-image: url("../image/li-pdk.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .chapt__line--pdk-R {
+        transform: rotateY(180deg); }
+    .chapt__line--pdk2 {
+      width: 100%;
+      height: 60px;
+      background-image: url("../image/li-pdk2.png");
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .chapt__line--pdk2-R {
+        transform: rotateY(180deg); }
     .chapt__line--taste {
       width: 100%;
       height: 60px;
@@ -279,6 +284,9 @@ section {
     .enchanted__subtitle--end {
       font-family: 'Ma Shan Zheng', cursive;
       font-size: 2em; }
+  .enchanted--slate {
+    padding-top: 13%;
+    padding-bottom: 12%; }
   .enchanted__img {
     font-size: 5em; }
     .enchanted__img--top {
@@ -365,10 +373,7 @@ span {
     font-family: 'Dancing Script', cursive;
     background: -webkit-gradient(linear, left top, left bottom, from(#093de2), to(#0889fb));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /*background: -webkit-gradient(linear, left top, left bottom, from(#093de2), to(#0889fb));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/ }
+    -webkit-text-fill-color: transparent; }
     .papilla__subtitle--cat {
       font-family: 'kalam'; }
 
