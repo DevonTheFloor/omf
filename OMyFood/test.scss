@@ -7,6 +7,9 @@ $taste-color: #fbfcfb;
 $bann-color: #539b84;
 $bgcolor: #F5F3DF;
 $font-color: #fccc44;
+$joy-color: #ad74a3;
+$sweet-color: #9b6cbb;
+$appetite-color: #cc8437;
 
 @font-face {
   font-family: 'kalam';
@@ -134,8 +137,20 @@ h4{
   &-pp{
       background-color: blue;
   }
-  &-fr{
-     background-color: blueviolet; 
+  &-ppmd{
+      background-color: #0670f3;
+  }
+  &-pped{
+      background-color: #3ba8f8;
+  }
+  &-app{
+     background-color: $appetite-color; 
+  }
+  &-joy{
+     background-color: $joy-color; 
+  }
+  &-swe{
+     background-color: $sweet-color; 
   }
 }
 
@@ -356,23 +371,20 @@ span{
     font-size: 4em;
     font-family: 'Cookie', cursive;
     @include degfont (#cc8437,#9b6cbb);
-    /*background: -webkit-gradient(linear, left top, left bottom, from(#cc8437), to(#9b6cbb));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
   }
 }
 
 .appetite{
   font-family: 'comic sans ms';
-  color: #cc8437;
+  color: $appetite-color;
 }
 
 .joy{
-  color: #ad74a3;
+  color: $joy-color;
 }
 
 .sweetened{
-  color: #9b6cbb;
+  color: $sweet-color;
 }
 
 .papilla{

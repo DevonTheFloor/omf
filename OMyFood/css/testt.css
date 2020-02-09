@@ -96,8 +96,16 @@ h4 {
     background-color: green; }
   .uline-pp {
     background-color: blue; }
-  .uline-fr {
-    background-color: blueviolet; }
+  .uline-ppmd {
+    background-color: #0670f3; }
+  .uline-pped {
+    background-color: #3ba8f8; }
+  .uline-app {
+    background-color: #cc8437; }
+  .uline-joy {
+    background-color: #ad74a3; }
+  .uline-swe {
+    background-color: #9b6cbb; }
 
 article {
   width: 100%; }
@@ -329,10 +337,7 @@ span {
     font-family: 'Cookie', cursive;
     background: -webkit-gradient(linear, left top, left bottom, from(#cc8437), to(#9b6cbb));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /*background: -webkit-gradient(linear, left top, left bottom, from(#cc8437), to(#9b6cbb));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/ }
+    -webkit-text-fill-color: transparent; }
 
 .appetite {
   font-family: 'comic sans ms';
