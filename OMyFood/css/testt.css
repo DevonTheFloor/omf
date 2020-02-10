@@ -551,8 +551,6 @@ a {
     width: 100%; }
     .menu__slate {
       width: 90%;
-      background-image: url("../image/lit-menu.png");
-      background-repeat: repeat;
       display: block; }
     .menu__title {
       font-size: 1.9em; }
