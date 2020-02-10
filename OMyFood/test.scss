@@ -7,6 +7,9 @@ $taste-color: #fbfcfb;
 $bann-color: #539b84;
 $bgcolor: #F5F3DF;
 $font-color: #fccc44;
+$joy-color: #ad74a3;
+$sweet-color: #9b6cbb;
+$appetite-color: #cc8437;
 
 @font-face {
   font-family: 'kalam';
@@ -134,8 +137,20 @@ h4{
   &-pp{
       background-color: blue;
   }
-  &-fr{
-     background-color: blueviolet; 
+  &-ppmd{
+      background-color: #0670f3;
+  }
+  &-pped{
+      background-color: #3ba8f8;
+  }
+  &-app{
+     background-color: $appetite-color; 
+  }
+  &-joy{
+     background-color: $joy-color; 
+  }
+  &-swe{
+     background-color: $sweet-color; 
   }
 }
 
@@ -360,15 +375,15 @@ span{
 
 .appetite{
   font-family: 'comic sans ms';
-  color: #cc8437;
+  color: $appetite-color;
 }
 
 .joy{
-  color: #ad74a3;
+  color: $joy-color;
 }
 
 .sweetened{
-  color: #9b6cbb;
+  color: $sweet-color;
 }
 
 .papilla{
@@ -562,10 +577,7 @@ a{
     width: 100%;
      &__slate{
       width: 90%;
-      background-image: url('../image/lit-menu.png'); 
-       background-repeat: repeat;
-
-       display: block;
+      display: block;
      }
      &__title{
          font-size: 1.9em;

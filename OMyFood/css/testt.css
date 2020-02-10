@@ -96,8 +96,16 @@ h4 {
     background-color: green; }
   .uline-pp {
     background-color: blue; }
-  .uline-fr {
-    background-color: blueviolet; }
+  .uline-ppmd {
+    background-color: #0670f3; }
+  .uline-pped {
+    background-color: #3ba8f8; }
+  .uline-app {
+    background-color: #cc8437; }
+  .uline-joy {
+    background-color: #ad74a3; }
+  .uline-swe {
+    background-color: #9b6cbb; }
 
 article {
   width: 100%; }
@@ -543,8 +551,6 @@ a {
     width: 100%; }
     .menu__slate {
       width: 90%;
-      background-image: url("../image/lit-menu.png");
-      background-repeat: repeat;
       display: block; }
     .menu__title {
       font-size: 1.9em; }
