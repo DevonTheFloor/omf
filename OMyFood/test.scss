@@ -106,8 +106,7 @@ h2, h3, h4{
   text-align: center;
 }
 
-h3{border: 2pw solid blue;
-  font-family: 'england_hand';
+h3{
   font-size: 1.7em;
   &:hover + .uline{
       transform: scaleX(1);}  
@@ -184,13 +183,13 @@ section{
   align-items: center;
   padding-top: 15%;
   padding-bottom: 15%;
+  padding-left: 2%;
+  padding-right: 2%;
   width: 80%;
   box-shadow: 18px 18px 20px 12px silver,3px 3px grey; 
   margin: 10%;
-  border: 2px darken(yellow,20);
   &__slate{
     font-family: 'Merienda One', cursive; 
-    //text-shadow: 2px 2px 2px darken(grey,15);
     transform: scale(1) 2000ms cubic-bezier(.32, 0, .07, 1);
     &--title{
       font-size: 2.5em;
@@ -224,11 +223,10 @@ section{
       }
       }
     &--taste{
-      font-family: 'Merienda One', cursive;
        @include degfont (#3e923a,#beff7f);
       font-size: 2.5em;
       &-M{
-        font-size: 2.5em;
+        font-size: 2em;
         color: #3e923a;
       }
       }
@@ -548,25 +546,35 @@ a{
 
 //==================== MEDIA =====================
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:800px){
   h1{
      font-size: 5em;
 
   }
-  h2{
-    display: none;
-  }
-  %card{
-    margin-top: 15%;
-    margin-bottom: 30%;
-    font-size: 0.95em;
-    font-family: 'kalam';
+  .do{
+    font-size: 3em;
   }
   .menu{
-    margin: 10%;
+    margin: 5%;
+    width: 90%;
     &--title{
-    font-size: 1.3em;}
+    font-size: 1em;}
   }
+  .taste__subtitle{
+    font-size: 1.9em;
+  }
+  .enchanted{
+    &__subtitle{
+    font-size: 2.5em;
+    }
+  }
+  .papilla__subtitle{
+    font-size: 2.5em;
+  }
+  .french__subtitle{
+    font-size: 2.5em;
+  }
+  
   #soon{
     padding-left: 0.2em;
     padding-right: 0.2em;
@@ -579,35 +587,22 @@ a{
   h1{
     font-size: 3em;
   }
-  h2{
-    display:block;
-  }
   #header{
      width: 100%;
     height: auto;
-
   }
-  %card{
-    margin-top: 15%;
-    margin-bottom: 30%;
-    font-size: 0.7em;
-    font-family: 'kalam';
-}
+
    .menu{
     margin: 10%;
     width: 100%;
      &__slate{
       width: 80%;
        font-size: 0.8em;
-      
      }
-    /* &__title{
-         font-size: 1.9em;
-     }*/
   }
 
   #footer{
-    font-size: 0.82em;}
+    font-size: 0.8em;}
 
   #top, #down{
     display: flex;
@@ -619,18 +614,6 @@ a{
     animation-timing-function: ease-in-out;
     animation-duration: 1500ms;}
 
-  .enchanted{
-
-  &__img{
-    &--top{
-      width: 35px;
-      height: 35px;
-    }
-    &--down{
-     display: none;
-    }
-    }
- }
   .uline{
     display: none;
   }
