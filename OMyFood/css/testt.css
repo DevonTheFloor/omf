@@ -270,7 +270,7 @@ section {
     position: relative;
     z-index: 1; }
     .enchanted--slate:hover::after {
-      opacity: 0.8; }
+      opacity: 0.6; }
     .enchanted--slate::after {
       content: " ";
       position: absolute;
@@ -281,7 +281,7 @@ section {
       background-color: grey;
       opacity: 0;
       z-index: -1;
-      transition: opacity 2000ms; }
+      transition: opacity 1500ms; }
   .enchanted__subtitle {
     font-family: 'Ma Shan Zheng', cursive;
     font-weight: bold;
@@ -320,7 +320,7 @@ span {
     position: relative;
     z-index: 1; }
     .french--slate:hover::after {
-      opacity: 0.8; }
+      opacity: 0.6; }
     .french--slate::after {
       content: " ";
       position: absolute;
@@ -331,7 +331,7 @@ span {
       background-color: grey;
       opacity: 0;
       z-index: -1;
-      transition: opacity 2000ms; }
+      transition: opacity 1500ms; }
   .french__subtitle {
     font-size: 5em;
     font-family: 'Cookie', cursive;
@@ -361,7 +361,7 @@ span {
     position: relative;
     z-index: 1; }
     .papilla--slate:hover::after {
-      opacity: 0.8; }
+      opacity: 0.6; }
     .papilla--slate::after {
       content: " ";
       position: absolute;
@@ -372,7 +372,7 @@ span {
       background-color: grey;
       opacity: 0;
       z-index: -1;
-      transition: opacity 2000ms; }
+      transition: opacity 1500ms; }
   .papilla__subtitle {
     font-size: 5em;
     font-family: 'Dancing Script', cursive;
@@ -394,7 +394,7 @@ span {
     position: relative;
     z-index: 1; }
     .taste--slate:hover::after {
-      opacity: 0.8; }
+      opacity: 0.6; }
     .taste--slate::after {
       content: " ";
       position: absolute;
@@ -405,7 +405,7 @@ span {
       background-color: grey;
       opacity: 0;
       z-index: -1;
-      transition: opacity 2000ms; }
+      transition: opacity 1500ms; }
   .taste__subtitle {
     font-size: 4em;
     font-family: 'Merienda One', cursive;

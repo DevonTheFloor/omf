@@ -306,7 +306,7 @@ section{
   z-index: 1;
   &:hover {
     &::after {
-        opacity: 0.8;
+        opacity: 0.6;
     }
   }
   &::after {
@@ -319,7 +319,7 @@ section{
     background-color: grey;
     opacity: 0;
     z-index: -1;
-    transition: opacity 2000ms;
+    transition: opacity 1500ms;
     
     }
   }
